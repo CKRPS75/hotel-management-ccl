@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-invoice,
+  #printable-invoice * {
+    visibility: visible;
+  }
+  #printable-invoice {
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    padding: 32px;
+    z-index: 9999;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

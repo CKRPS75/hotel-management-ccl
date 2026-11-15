@@ -4,3 +4,6 @@ __pycache__/
 backend/pymysql*
 backend/PyMySQL*
 .env
+
+node_modules/
+dist/
